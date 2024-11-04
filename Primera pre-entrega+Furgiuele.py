@@ -84,6 +84,6 @@ def main() -> None:
             print("Gracias por utilizar nuestros servicios, Federico Furgiuele.")
             break
         else:
-            print("🚫 Opción inválida, por favor intente nuevamente.")
+            print("Opción inválida, por favor intente nuevamente.")
 
 main()
