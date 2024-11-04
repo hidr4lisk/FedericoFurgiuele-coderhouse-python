@@ -26,7 +26,7 @@ def registrar_usuario(base_usuarios: dict[str, str]) -> None:
     print("REGISTRO DE USUARIO")
     while True:
         # Solicitar y validar el nombre de usuario
-        usuario_input = input("Nombre de Usuario: ")
+        usuario_input = input("Nombre de Usuario: ").lower() #Para comparar todos en mínusculas 
         if not validar_usuario(usuario_input):
             continue
         usuario = usuario_input
@@ -46,7 +46,7 @@ def mostrar_usuarios(base_usuarios: dict[str, str]) -> None:
     """Muestra la lista de usuarios registrados en el sistema."""
     print("Lista de usuarios registrados:")
     for usuario, clave in base_usuarios.items():
-        print(f"Usuario: {usuario}, Clave: {clave}")
+        print(f"Usuario: {usuario.upper()}, Clave: {clave}")
 
 def entrar_al_sistema(base_usuarios: dict[str, str]) -> None:
     """Permite a un usuario registrado iniciar sesión en el sistema."""
