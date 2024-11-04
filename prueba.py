@@ -40,3 +40,5 @@ def main():
     mostrar_miembros_del_club()
     entrar_al_sistema()
 
+
+main()
